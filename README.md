@@ -22,7 +22,7 @@ Windows makes "put the computer to sleep from a script/shortcut" weirdly annoyin
 - PowerShell `Add-Type` + `[System.Windows.Forms.Application]::SetSuspendState(...)` — loads the entire .NET runtime to call one function
 - Third-party tools — why install an app for this?
 
-**snooze** is a ~2 KB binary that does exactly one thing. Drop it in your PATH, make a desktop shortcut, bind it to a hotkey — done.
+**snooze** is a 1.5 KB binary that does exactly one thing. Drop it in your PATH, make a desktop shortcut, bind it to a hotkey — done.
 
 ## Building
 
@@ -149,7 +149,7 @@ snooze -h        REM same thing
 
 | Implementation | Typical size |
 |---------------|-------------|
-| This (NASM + GoLink) | ~2 KB |
+| This (NASM + GoLink) | 1,536 bytes |
 | C with `#pragma comment(linker, "/NODEFAULTLIB")` | ~3–4 KB |
 | C with MSVC `/O1` + CRT | ~8–10 KB |
 | Go | ~2 MB |
