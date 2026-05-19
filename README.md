@@ -86,7 +86,7 @@ nasm -f win64 snooze.asm -o snooze.obj
 golink /entry:Start /console snooze.obj kernel32.dll powrprof.dll
 ```
 
-That's it. Two commands, ~2 KB output.
+That's it. Two commands, 1,536 bytes output.
 
 ## How it works
 
