@@ -10,7 +10,7 @@ if errorlevel 1 (
 )
 
 echo [2/2] Linking...
-golink /entry:Start /console snooze.obj kernel32.dll
+golink /entry:Start /console snooze.obj kernel32.dll powrprof.dll
 if errorlevel 1 (
     echo FAILED: golink error
     exit /b 1
